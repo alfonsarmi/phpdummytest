@@ -5,6 +5,6 @@ class FooLack {
     var $var2 = "constant string";
 
     public function doSomething() {
-        print("Hello world!" . PHP_EOL);
+        print("Hello world!" . PHP_EOL); 
     }
 }
