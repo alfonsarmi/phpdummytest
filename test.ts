@@ -1,10 +1,10 @@
-import myClass2 from './testinheritance2.js';
+import myClass2 from './testinheritance2.ts';
 
-class test {
-//This is a comment
+class test
+{
+
 	var a = 1;
 	var b = 1;
-	var holi = "holi";
 	if (a = 1)
 	{
 		if (a = 1 && b == 2 || b == 1)
@@ -46,3 +46,11 @@ class Animal {
     this.age = age;
   }
 }
+class Dog extends Animal {
+  constructor(name, age, color){
+    super(name, age)
+    this.color = color;
+  }
+}
+var myDog = new Dog("Fatty", 2, "Brown");
+console.log(myDog); // Produces an object.
